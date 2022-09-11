@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="100dp"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.RecentAds">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:id="@+id/ser"
+            android:layout_marginTop="-30dp"
+            app:cardCornerRadius="42dp"
+            app:cardElevation="30dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/serch"
+        android:drawableRight="@drawable/search"
+        android:drawablePadding="10dp"
+        android:elevation="10dp"
+        android:hint="search"
+
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/title"
+        android:textSize="35sp"
+        android:layout_below="@id/search"
+        android:text="Recent Ads"
+       android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:textColor="#6C63FF"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ser" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

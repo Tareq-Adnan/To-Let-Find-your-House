@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/carter_one</item>
+        <item>@font/gugi</item>
+        <item>@font/pattaya</item>
+        <item>@font/sonsie_one</item>
+        <item>@font/sriracha</item>
+        <item>@font/tag</item>
+        <item>@font/trade_winds</item>
+        <item>@font/wendy_one</item>
+    </array>
+</resources>

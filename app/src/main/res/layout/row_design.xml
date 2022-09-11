@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/userss"
+    android:layout_height="95dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<androidx.cardview.widget.CardView
+    android:id="@+id/imc"
+    android:layout_width="70dp"
+    android:layout_marginLeft="5dp"
+    app:cardCornerRadius="50dp"
+    android:layout_height="70dp">
+    <ImageView
+        android:id="@+id/userimage"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/googleg_standard_color_18" />
+</androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_toEndOf="@id/imc"
+                android:text="Tarekul Islam"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/UserLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/UserName"
+                android:layout_marginLeft="18dp"
+                android:layout_toEndOf="@id/imc"
+                android:drawableStart="@drawable/location"
+                android:drawablePadding="2dp"
+                android:text="Gazipur Sadar, Gazipur"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imc"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                app:cardCornerRadius="5dp">
+
+                <ImageView
+                    android:id="@+id/userimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/googleg_standard_color_18" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_toEndOf="@id/imc"
+                android:text="Tarekul Islam"
+                android:drawableStart="@drawable/cate"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/UserLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/UserName"
+                android:layout_marginLeft="18dp"
+                android:layout_toEndOf="@id/imc"
+                android:drawableStart="@drawable/location"
+                android:drawablePadding="2dp"
+                android:text="Gazipur Sadar, Gazipur"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rentCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/UserLocation"
+                android:layout_marginLeft="18dp"
+                android:layout_toEndOf="@id/imc"
+                android:drawableStart="@drawable/prize"
+                android:drawablePadding="2dp"
+                android:text="1500"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

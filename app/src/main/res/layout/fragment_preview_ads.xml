@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PreviewAds">
+
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/lbg" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/bauhaus93"
+        android:text="To-let"
+        android:textColor="@color/white"
+        android:textSize="45sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/hImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/h1" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/infobg"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <Button
+                    android:id="@+id/call"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/contactInfo"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bbg"
+                    android:text="Call"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/cate"
+                    android:drawablePadding="10dp"
+                    android:shadowColor="#45000000"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="Category"
+                    android:textColor="#75000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/Housecategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/middlebg2"
+                    android:elevation="5dp"
+                    android:gravity="top"
+                    android:padding="10dp"
+                    android:text="Category"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/houseImage"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/prize"
+                    android:drawablePadding="10dp"
+                    android:shadowColor="#45000000"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="Price"
+                    android:textColor="#75000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rentPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/price"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/middlebg2"
+                    android:elevation="5dp"
+                    android:gravity="top"
+                    android:padding="10dp"
+                    android:text="Price"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/selectcategory"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/description"
+                    android:drawablePadding="10dp"
+                    android:shadowColor="#45000000"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="Description"
+                    android:textColor="#75000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/facilities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/middlebg2"
+                    android:elevation="5dp"
+                    android:gravity="top"
+                    android:textSize="15sp"
+                    android:maxHeight="100dp"
+                    android:padding="10dp"
+                    android:text="Description Here"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rentPrice"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/location"
+                    android:drawablePadding="10dp"
+                    android:shadowColor="#45000000"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="Location"
+                    android:textColor="#75000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/houseLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/middlebg2"
+                    android:elevation="5dp"
+                    android:gravity="top"
+                    android:padding="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="House Location" />
+
+                <TextView
+                    android:id="@+id/Contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/houseLocation"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/phone"
+                    android:drawablePadding="10dp"
+                    android:shadowColor="#45000000"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="Contact Information"
+                    android:textColor="#75000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/contactInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Contact"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/middlebg2"
+                    android:elevation="5dp"
+                    android:gravity="top"
+                    android:padding="10dp"
+                    android:text="Mobile Number"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
