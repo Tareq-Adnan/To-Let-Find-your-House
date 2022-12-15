@@ -53,7 +53,6 @@ public class LoginActivity extends AppCompatActivity {
         b.signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loading();
                 loginUser();
 
             }
@@ -65,14 +64,17 @@ public class LoginActivity extends AppCompatActivity {
 
         if (TextUtils.isEmpty(mobile)) {
             Toast.makeText(this, "Email or Mobile number is required!", Toast.LENGTH_SHORT).show();
+            b.emailorphone.setError("required!");
         } else if (TextUtils.isEmpty(pass)) {
             Toast.makeText(this, "password is required", Toast.LENGTH_SHORT).show();
+            b.password.setError("required!");
         } else {
             if (mobile.equals("admin")){
                 admin(mobile, pass);
             }
             else{
                 AllowAccess(mobile, pass);
+                loading();
             }
 
         }

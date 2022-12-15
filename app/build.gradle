@@ -30,6 +30,7 @@ android {
     buildFeatures {
         viewBinding true;
     }
+    namespace 'com.example.tolet'
 }
     apply plugin: 'com.android.application'
     apply plugin: 'com.google.gms.google-services'
